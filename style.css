@@ -22,7 +22,7 @@ body {
 
 .movie-image {
     width: 100%; /* Image takes full width of container */
-    max-width: 400px; /* Limit max image width */
+    max-width: 200px; /* Limit max image width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
     margin-bottom: 20px;
