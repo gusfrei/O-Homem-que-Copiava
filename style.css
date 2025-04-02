@@ -1,53 +1,80 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Use min-height for mobile screens */
+    min-height: 100vh;
     margin: 0;
-    background-color: #f4f4f4; /* Light background */
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-..container {
+.container {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.movie-image {
+    width: 250px; /* Ajuste o tamanho da imagem conforme necessário */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.page-title {
+    font-size: 1.8em; /* Diminuído para acomodar a imagem */
+    margin-bottom: 25px;
+    color: #2c3e50;
 }
 
 .copy-button {
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 18px 35px;
+    font-size: 1.1em;
     cursor: pointer;
-    background-color: #007bff; /* Blue button */
+    background-color: #3498db;
     color: white;
     border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-    width: 80%; /* Adjust width for mobile */
-    max-width: 300px; /* Limit max width */
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 400px;
 }
 
 .copy-button:hover {
-    background-color: #0056b3;
+    background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 .message-display {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    display: none; /* Initially hidden */
-    word-wrap: break-word; /* Prevents overflow */
-    width: 80%;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border: 1px solid #cce0ec;
+    border-radius: 6px;
+    display: none;
+    word-wrap: break-word;
+    width: 100%;
+    color: #2980b9;
+    font-weight: 500;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 600px) {
-    .copy-button, .message-display {
-        width: 90%; /* Further adjust width for small screens */
+    .container {
+        padding: 20px;
+    }
+    .page-title {
+        font-size: 1.6em; /* Ajuste para telas menores */
+    }
+    .copy-button {
+        padding: 15px 30px;
+    }
+    .movie-image {
+        width: 200px; /* Ajuste para telas menores */
     }
 }
