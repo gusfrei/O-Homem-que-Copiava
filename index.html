@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>O Homem Que Copiava</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="copyButton">Copy Message</button>
+
+    <script>
+        document.getElementById('copyButton').addEventListener('click', function() {
+            const textToCopy = "This is the message your father needs to copy and paste!"; // Replace with the actual message
+
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                alert('Message copied to clipboard! Now paste it in WhatsApp.');
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+                alert('Copying failed. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>
