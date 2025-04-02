@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height for mobile screens */
+    margin: 0;
+    background-color: #f4f4f4; /* Light background */
+}
+
+..container {
+    text-align: center;
+    padding: 20px;
+}
+
+.copy-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    width: 80%; /* Adjust width for mobile */
+    max-width: 300px; /* Limit max width */
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+.message-display {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+    word-wrap: break-word; /* Prevents overflow */
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .copy-button, .message-display {
+        width: 90%; /* Further adjust width for small screens */
+    }
+}
