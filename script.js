@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const copyButton = document.getElementById('copyButton');
     const messageDisplay = document.getElementById('messageDisplay');
-    const textToCopy = "00020101021226830014br.gov.bcb.pix2561pix.bancobv.com.br/qr/v2/31effa50-0fd1-11f0-92cc-a2b43db444f65204000053039865802BR5925WISE BRASIL CORRETORA DE 6009SAO PAULO62410503***50300017BR.GOV.BCB.BRCODE01051.0.0630447C4";
+    const textToCopy = "00020101021226830014br.gov.bcb.pix2561pix.bancobv.com.br/qr/v2/458316e6-3265-11f0-9515-a6b7444628c95204000053039865802BR5925WISE BRASIL CORRETORA DE 6009SAO PAULO62410503***50300017BR.GOV.BCB.BRCODE01051.0.0630446B6";
 
     copyButton.addEventListener('click', function() {
         navigator.clipboard.writeText(textToCopy).then(function() {
